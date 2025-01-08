@@ -13,12 +13,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Install HTMLHint
-        run: npm Install --save-dev HTMLHint
+        run: npm install --save-dev HTMLHint
       - name: Install Stylelint
         run: npm install --save-dev Stylelint
       - name: Lint HTML Files
-        run: npx run HTMLHint "**/*.html"
+        run: npx  HTMLHint "**/*.html"
       - name: Lint CSS Files
-        run: npx run Stylelint "**/*.css"
+        run: npx  Stylelint "**/*.css"
       - name: Display Package.json contents
         run: cat package.json
